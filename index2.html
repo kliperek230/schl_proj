@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pl">
+<!-- tag obejmujący cały plik szkieletu strony wraz z określeniem języku -->
+
+<head>
+    <!-- tag, w którym okreslane są wszystkie informacje dotyczące strony, które nie są pokazywane w wizualnie użytkownikowi -->
+    <meta charset="UTF-8"> <!-- meta oznaczenie kodowania strony -->
+    <meta name="keywords" content=""> <!-- meta oznaczenie słów kluczowych -->
+    <meta name="description" content=" "> <!-- meta oznaczenie opisu strony -->
+    <meta name="author" content="Kacper Adrianowicz"> <!-- meta oznaczenie autora -->
+    <title>Projekt</title> <!-- meta tag opisujący nazwę strony, która wyświetla się na karcie w przeglądarce -->
+    <link rel="stylesheet" href="style.css" type="text/css"> <!-- podpięcie pliku ze stylami -->
+    <link rel="stylesheet" href="font_awesome/css/all.min.css" type="text/css"> <!-- podpięcie ikon font awesome -->
+</head>
+
+<body>
+    <!-- tag, w którym umieszczany jest cały widoczny content strony -->
+    <header>
+        <!-- tag pozwalający na semantyczne wyodrębnienie nagłówka strony -->
+        <nav>
+            <!-- tag semantycznie pokazujący, że jest to nawigacja witryny -->
+            <ul>
+                <!-- lista -->
+                <li class="logo"><a href="index.html"><i class="fas fa-home"></i></a></li> <!-- pojedynczy wiersz w liście, w raz z linkiem przekierowującym do podstrony w formie ikonki-->
+                <li class="title">
+                    <h1>Projekt</h1> <!-- nagłówek -->
+                </li>
+                <li class="icon web"><a href="index2.html"><i class="fas fa-graduation-cap"></i></a></li>
+                <li class="icon ship"><a href="http://www.we.umg.edu.pl/"><i class="fas fa-ship"></i></a></li>
+                <li class="icon fb"><a href="https://www.facebook.com/Uniwersytet.Morski.w.Gdyni/"><i class="fab fa-facebook-square"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="table_container">
+        <!-- wydzielona sekcja do wystylowania pojemnika tabeli -->
+        <table class="table_one">
+            <!-- tag tworzący tabelę -->
+            <tr>
+                <!-- tag  tworzący wiersz==>
+                <th>Lp.</th>    <!-- tag tworzący komórki domyślnie pogrubione i wycentrowane -->
+                <th>Przedmiot</th>
+                <th>Typ przedmiotu</th>
+                <th>Liczba godzin</th>
+                <th>Liczba punktów</th>
+            </tr>
+            <tr>
+                <td>1.</td> <!-- tag w którym komórki są domyślnie przypisane do lewej strony -->
+                <td>Aparaty i urządzenia elektryczne</td>
+                <td>Wykład</td>
+                <td>15</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>Automatyzacja systemów energetycznych</td>
+                <td>Laboratoria</td>
+                <td>10</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>Cyfrowe układy sterowania</td>
+                <td>Wykład</td>
+                <td>8</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>Cyfrowe układy sterowania</td>
+                <td>Projekt</td>
+                <td>8</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>5.</td>
+                <td>Cyfrowe układy sterowania</td>
+                <td>Laboratoria</td>
+                <td>10</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>6.</td>
+                <td>Elektroenergetyka</td>
+                <td>Laboratoria</td>
+                <td>10</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>7.</td>
+                <td>Elektronika i energoelektronika</td>
+                <td>Laboratoria</td>
+                <td>10</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>8.</td>
+                <td>Język angielski</td>
+                <td>Ćwiczenia</td>
+                <td>20</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>9.</td>
+                <td>Komputerowe wspomaganie obliczeń inżynierskich</td>
+                <td>Wykład</td>
+                <td>15</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>10.</td>
+                <td>Komputerowe wspomaganie obliczeń inżynierskich</td>
+                <td>Laboratoria</td>
+                <td>15</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>11.</td>
+                <td>Napęd elektryczny</td>
+                <td>Wykład</td>
+                <td>15</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>12.</td>
+                <td>Programowanie komputerów</td>
+                <td>Wykład</td>
+                <td>8</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>13.</td>
+                <td>Programowanie komputerów</td>
+                <td>Laboratoria</td>
+                <td>10</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>14.</td>
+                <td>Sieci komputerowe</td>
+                <td>Wykład</td>
+                <td>8</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>15.</td>
+                <td>Sieci komputerowe</td>
+                <td>Laboratoria</td>
+                <td>15</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>16.</td>
+                <td>Sterowniki programowalne</td>
+                <td>Projekt</td>
+                <td>8</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>17.</td>
+                <td>Technika przeciwdziałania zakłóceniom</td>
+                <td>Wykład</td>
+                <td>8</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>18.</td>
+                <td>Technika przeciwdziałania zakłóceniom</td>
+                <td>Laboratoria</td>
+                <td>10</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>19.</td>
+                <td>Technika wysokich napięć</td>
+                <td>Wykład</td>
+                <td>15</td>
+                <td>2</td>
+            </tr>
+
+        </table>
+        <img class="gif" src="img/avatar.gif" alt="gif"> <!-- tag pozwalający dodać zdjęcie -->
+    </section>
+
+</body>
+
+</html>
