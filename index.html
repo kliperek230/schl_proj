@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+<!-- tag obejmujący cały plik szkieletu strony wraz z określeniem języku -->
+
+<head>
+    <!-- tag, w którym okreslane są wszystkie informacje dotyczące strony, które nie są pokazywane w wizualnie użytkownikowi -->
+    <meta charset="UTF-8"> <!-- meta oznaczenie kodowania strony -->
+    <meta name="keywords" content=""> <!-- meta oznaczenie słów kluczowych -->
+    <meta name="description" content=" "> <!-- meta oznaczenie opisu strony -->
+    <meta name="author" content="Kacper Adrianowicz"> <!-- meta oznaczenie autora -->
+    <title>Projekt</title> <!-- meta tag opisujący nazwę strony, która wyświetla się na karcie w przeglądarce -->
+    <link rel="stylesheet" href="style.css" type="text/css"> <!-- podpięcie pliku ze stylami -->
+    <link rel="stylesheet" href="font_awesome/css/all.min.css" type="text/css"> <!-- podpięcie ikon font awesome -->
+    <script language="JavaScript">
+        function WinOpen() {
+            msg = open("", "DisplayWindow", "toolbar=no,directories=no,menubar=no,WIDTH=235, height=235");
+            msg.document.write("<head><title>Pop up</title></head>");
+            msg.document.write("<body><img src=img/satisfaction.png  height=220 width=220></body>");
+        }
+    </script> <!-- krótka funkcja w języku JavaScript -->
+</head>
+
+<body>
+    <!-- tag, w którym umieszczany jest cały widoczny content strony -->
+    <header>
+        <!-- tag pozwalający na semantyczne wyodrębnienie nagłówka strony -->
+        <nav>
+            <!-- tag semantycznie pokazujący, że jest to nawigacja witryny -->
+            <ul>
+                <!-- lista -->
+                <li class="logo"><a href="index.html"><i class="fas fa-home"></i></a></li> <!-- pojedynczy wiersz w liście, w raz z linkiem przekierowującym do podstrony w formie ikonki-->
+                <li class="title">
+                    <h1>Projekt</h1> <!-- nagłówek -->
+                </li>
+                <li class="icon web"><a href="index2.html"><i class="fas fa-graduation-cap"></i></a></li>
+                <li class="icon ship"><a href="http://www.we.umg.edu.pl/"><i class="fas fa-ship"></i></a></li>
+                <li class="icon fb"><a href="https://www.facebook.com/Uniwersytet.Morski.w.Gdyni/"><i class="fab fa-facebook-square"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="icon_container">
+        <!-- tag służący za pojemnik dla animacji ikony -->
+        <div class="hamburger" onclick="WinOpen()"></div> <!-- tag wystylowany w pliku .css do animacji, który po kliknięciu na niego wywoła funkcję WinOpen -->
+    </div>
+    <section class="first">
+        <h1>Proszę kliknąć we flagę Austrii</h1>
+        <p>Powyższy efekt uzyskany został za pomocą kilku linijek kodu <b>JavaScript</b>. Kliknięcie na obiekt flagi spowoduje wywołanie funkcji WinOpen(). Funkcja ta wyświetla <i class="far fa-window-maximize"></i> , w którym możemy zamodelować własną ministronkę. W tym przypadku wyświetlone zostało jedynie zdjęcie.</p> <!-- paragraf -->
+    </section>
+
+
+</body>
+
+</html>
